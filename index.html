@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Buddy - Smart Decision Making Assistant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 30px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        
+        .feature-card p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .frameworks {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .frameworks h2 {
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        .framework-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .framework-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .framework-item h4 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .framework-item p {
+            color: #777;
+            font-size: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            margin-top: 50px;
+        }
+        
+        .developer-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Decision Buddy</h1>
+            <p class="subtitle">Your Intelligent Decision-Making Companion</p>
+            <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                Make confident, well-informed decisions with AI-powered analysis and structured decision-making frameworks.
+            </p>
+        </header>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>🧠 AI-Powered Analysis</h3>
+                <p>Leverage advanced artificial intelligence to analyze your decisions using proven frameworks and methodologies. Get objective insights backed by data-driven recommendations.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📊 Multiple Frameworks</h3>
+                <p>Choose from SWOT Analysis, Decision Matrix, and Cost-Benefit Analysis frameworks tailored to different types of decisions and complexity levels.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🎯 Custom Criteria Scoring</h3>
+                <p>Define personalized evaluation criteria and score options on a 1-10 scale to ensure decisions align with your specific priorities and values.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>💾 Decision History</h3>
+                <p>Keep track of all your past decisions, recommendations, and outcomes. Learn from previous choices and improve your decision-making process over time.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>🔐 Privacy Focused</h3>
+                <p>Your decisions and personal information remain completely private. All data is stored locally on your device with optional cloud backup.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>📱 Cross-Platform Sync</h3>
+                <p>Access your decision history seamlessly across all your devices. Your important decisions are always available when you need them.</p>
+            </div>
+        </div>
+
+        <div class="frameworks">
+            <h2>Decision Frameworks</h2>
+            <div class="framework-grid">
+                <div class="framework-item">
+                    <h4>SWOT Analysis</h4>
+                    <p>Evaluate Strengths, Weaknesses, Opportunities, and Threats for strategic decision-making and comprehensive situational awareness.</p>
+                </div>
+                
+                <div class="framework-item">
+                    <h4>Decision Matrix</h4>
+                    <p>Use weighted scoring to compare multiple options objectively across various criteria for data-driven choices.</p>
+                </div>
+                
+                <div class="framework-item">
+                    <h4>Cost-Benefit Analysis</h4>
+                    <p>Weigh costs against benefits including financial, time, and effort investments versus potential returns and long-term value.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="developer-info">
+            <h3 style="color: white; margin-bottom: 15px;">About the Developer</h3>
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem;">
+                Developed by Scholarship<br>
+                Contact: <a href="mailto:sujith81159@gmail.com" style="color: #FFD700; text-decoration: none;">sujith81159@gmail.com</a>
+            </p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Decision Buddy. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="privacy_policy.html" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
